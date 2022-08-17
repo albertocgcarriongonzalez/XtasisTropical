@@ -1,6 +1,9 @@
 {
   "name": "heladeria-xtasis-tropical2",
   "version": "0.0.0",
+  "engines": {
+    "node": "16.15.0"
+    },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
