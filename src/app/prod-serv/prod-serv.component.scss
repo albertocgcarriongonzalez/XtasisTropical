@@ -1,0 +1,203 @@
+$color-primario: #3E8AC8;
+$color-secundario: #FF7B6E;
+$color-terciario: #FEF57C;
+
+
+@font-face {
+    font-family: learning_curve;
+    src: url("../../assets/resources/fonts/learning_curve/redundeadcond.ttf");
+  }
+  
+
+a img:hover{
+  opacity: 70%;
+  border-radius: 0px 60px 60px 0px;
+  border-left: 5px solid cyan;
+}  
+
+#miAcordion{
+  width: 100%;
+}
+
+.container{
+        width: 100%;
+        background-color: black;
+        border-radius: 15px;
+        color: whitesmoke;
+        display: flex;
+        padding: 5%;
+        margin-bottom: 20px;
+        text-align: justify;
+        
+}
+
+.container-img{
+  background-color: #FF7B6E;
+  height: 120px;
+  margin: 20px;
+  
+}
+
+
+
+.title{
+  font-family: learning_curve;
+  font-size: 2em;
+  color: #FEF57C;
+  text-align: center;
+}
+
+.title2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  padding: 1rem;
+  color: #FEF57C;
+  text-align: center;
+}
+.title3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  padding: 1rem;
+  color: #FEF57C;
+  text-align: center;
+
+}
+
+table{
+  width: 100%;
+  overflow-x: auto;
+  text-align: center;
+}
+tbody td{
+  box-shadow: 0px 0px 5px white;
+  font-size: x-large;
+  border-radius: 10px;
+
+}
+
+thead{
+  position: sticky;
+  top: 0;
+
+}
+
+td img{
+  border-radius: 15px;
+
+}
+
+.elementoPar{
+  background-color: rgb(77, 76, 76);
+  text-align: center;
+  color: white;
+}
+
+.elementoImpar{
+  background-color: rgb(56, 52, 52);
+  text-align: center;
+  color: white;
+}
+
+/*
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+       Comienza la comfiguración Responsive Design
+   * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+    * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*/
+
+@media only screen and (max-width: 600px) {
+
+  .vermas{
+    visibility: collapse;
+  }
+
+  #ultimoLI{
+    width: 100%;
+    
+  }
+
+  .container-img{
+    position: absolute;
+    visibility: hidden;
+  }
+  
+  img{
+    border-radius: 50%;
+    width: 100%;
+  }
+
+  .elementoPar{
+    background-color: rgb(77, 76, 76);
+    text-align: center;
+    color: white;
+  }
+
+  .elementoImpar{
+    background-color: rgb(56, 52, 52);
+    text-align: center;
+    color: white;
+  }
+
+  .prueba{
+    background-image: linear-gradient(180deg,white,transparent);
+    color: black;
+  }
+
+  }
+
+//------
+
+@media screen and (max-width: 375px) {
+  
+  table {
+      width:100%;
+  }
+  thead {
+      display: none;
+      
+  }
+  tr:nth-of-type(2n) {
+      background-color: inherit;
+      
+  }
+  td img {
+    width: 50px;
+}
+  tr td:first-child {
+      background: #f0f0f0;
+      font-weight:bold;
+      font-size:1.3em;
+
+  }
+  tbody td {
+      display: block;
+      text-align:center;
+      
+  }
+  tbody td:before {
+      content: attr(data-th);
+      display: block;
+      text-align:center;
+      
+  }
+
+  .elementoPar{
+    background-color: rgb(77, 76, 76);
+    text-align: center;
+    color: white;
+  }
+
+  .elementoImpar{
+    background-color: rgb(56, 52, 52);
+    text-align: center;
+    color: white;
+  }
+
+  .container-img{
+    position: absolute;
+    visibility: hidden;
+  }
+ 
+
+}

@@ -1,0 +1,304 @@
+<div class="container">
+    <img class="container-img" src="../../assets/IMG/GRAFAscenso.png" alt="">
+    <p>
+      Nuestra Heladería se complace en brindarles ofertas para para llevar. Bolas de Helado, Barquillos de Helado y más, con múltiples variedades de sabores y ofertas de embaces que compendren desde 150 ml hasta 10 L.
+      <br><br>
+      Nos encontramos en una face de crecimiento continuo donde las ofertas y los servicios cada vez eleva las estadísticas de personas complacidas.   
+    </p>
+  
+    <p style="background-image: linear-gradient(180deg,transparent 90%,white 90%);box-shadow: 0px 0px 5px white; padding: 10px; border-radius: 15px;">
+      Tenemos variedades de sabores, ofertas, envases y Tinas de helado
+    </p>
+    
+  </div>
+  
+  
+  
+  <div class="container " >
+  
+  <!--Aca comienza el componente Colapse-->
+  
+  
+  <div class="accordion alert alert-secondary" id="miAcordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button
+          class="accordion-button"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseOne"
+          aria-expanded="true"
+          aria-controls="collapseOne"
+          
+        >
+          <div><strong>Cantidad de Sabores Procesados:</strong></div>
+          <button id="detalles" class="btn btn-primary" >{{totalSabores}}</button>
+  
+          <div class="vermas" style="position: absolute; right: 3%">
+            Pinche para ver más...
+          </div>
+        </button>
+      </h2>
+      <div
+        id="collapseOne"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingOne"
+        data-bs-parent="#miAcordion"
+      >
+        <div class="accordion-body">
+          <!--Informacion 1 Sabores-->
+  
+          <div class="card list-group-item">
+            
+            <!--Información del primer elemento Sabores-->
+  
+            <table class="table table-dark " style="box-shadow:0px 0px 10px white;">
+              <thead>
+                <tr>
+                  <th scope="col" colspan="4" class="title2">SABORES OFERTADOS ( {{totalSabores}} )</th>
+                </tr>
+                <tr class="title3">
+                  <th scope="col">#</th>
+                  <th scope="col">SABORES</th>
+                  <th scope="col">VALOR <br> NUTRICIONAL</th>
+                  <th scope="col">THUMBNAIL</th>
+                </tr>
+          
+              </thead>
+              <tbody *ngFor="let fila of Sabores;let impar = odd; let par = even;">
+          
+                <tr>
+                  <th [ngClass]="{elementoPar:par,elementoImpar:impar,prueba:par}"> {{fila.id}} </th>
+                  <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> {{fila.name}} </td>
+                  <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> <a href="https://www.google.com/search?q=Valor+Nutricional+{{fila.name}}">Buscar</a> </td>
+                  <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> <a href="../../assets/IMG/sabores/{{fila.id}}.jpg"> <img src="../../assets/IMG/sabores/{{fila.id}}.jpg" alt="{{fila.name}}"></a> </td>
+                </tr>
+          
+              </tbody>
+            </table>
+  
+            <!--Fin del primer elemento-->
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseTwo"
+          aria-expanded="false"
+          aria-controls="collapseTwo" 
+        >
+          
+        <div><strong>Cantidad de Ofertas:</strong></div>
+          <button id="detalles" class="btn btn-primary">{{totalOfertas}}</button>
+  
+          <div class="vermas" style="position: absolute; right: 3%">
+            Pinche para ver más...
+          </div>
+  
+        </button>
+      </h2>
+      <div
+        id="collapseTwo"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingTwo"
+        data-bs-parent="#miAcordion"
+      >
+        <div class="accordion-body">
+          
+          
+          <!--Información del segundo elemento Ofertas-->
+  
+          <table class="table table-dark " style="box-shadow:0px 0px 10px white;">
+            <thead>
+              <tr>
+                <th scope="col" colspan="4" class="title2">OFERTAS DE HELADOS ( {{totalOfertas}} )</th>
+              </tr>
+              <tr class="title3">
+                <th scope="col">#</th>
+                <th scope="col">OFERTA</th>
+                <th scope="col">THUMBNAIL</th>
+              </tr>
+        
+            </thead>
+            <tbody *ngFor="let fila of Ofertas;let impar = odd; let par = even;">
+        
+              <tr>
+                <th [ngClass]="{elementoPar:par,elementoImpar:impar,prueba:par}"> {{fila.id}} </th>
+                <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> {{fila.name}} </td>
+                <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> <a href="../../assets/IMG/ofertas/{{fila.id}}.jpg"><img src="../../assets/IMG/ofertas/{{fila.id}}.jpg" alt="{{fila.name}}"></a>  </td>
+              </tr>
+        
+            </tbody>
+          </table>
+  
+          <!--Fin del segundo elemento-->
+  
+  
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseThree"
+          aria-expanded="false"
+          aria-controls="collapseThree" 
+        >
+        
+        <div><strong>Tipos de Envases para llevar:</strong></div>
+          <button id="detalles" class="btn btn-primary">{{totalEnvases}}</button>
+  
+          <div class="vermas" style="position: absolute; right: 3%">
+            Pinche para ver más...
+          </div>
+  
+  
+        </button>
+      </h2>
+      <div
+        id="collapseThree"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingThree"
+        data-bs-parent="#miAcordion"
+      >
+        <div class="accordion-body">
+          
+            <!--Información del tercer elemento Envases-->
+  
+            <table class="table table-dark " style="box-shadow:0px 0px 10px white;">
+              <thead>
+                <tr>
+                  <th scope="col" colspan="4" class="title2">TIPOS DE ENVASES ( {{totalEnvases}} )</th>
+                </tr>
+                <tr class="title3">
+                  <th scope="col">#</th>
+                  <th scope="col">ENVASE</th>
+                  <th scope="col">THUMBNAIL</th>
+                </tr>
+          
+              </thead>
+              <tbody *ngFor="let fila of Envases;let impar = odd; let par = even;">
+          
+                <tr>
+                  <th [ngClass]="{elementoPar:par,elementoImpar:impar,prueba:par}"> {{fila.id}} </th>
+                  <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> {{fila.name}} </td>
+                  <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> <a href="../../assets/IMG/envases/{{fila.id}}.jpg"> <img src="../../assets/IMG/envases/{{fila.id}}.jpg" alt="{{fila.name}}"> </a></td>
+                </tr>
+          
+              </tbody>
+            </table>
+    
+            <!--Fin del tercer elemento-->
+          
+  
+        </div>
+      </div>
+    </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseFour"
+        aria-expanded="false"
+        aria-controls="collapseFour" 
+      >
+        
+      <div><strong>Tipos de Tinas de Helado</strong></div>
+        <button id="detalles" class="btn btn-primary">{{totalTinas}}</button>
+  
+        <div class="vermas" style="position: absolute; right: 3%">
+          Pinche para ver más...
+        </div>
+  
+      </button>
+    </h2>
+    <div
+      id="collapseFour"
+      class="accordion-collapse collapse"
+      aria-labelledby="headingFour"
+      data-bs-parent="#miAcordion"
+    >
+      <div class="accordion-body">
+        
+        
+        <!--Información del cuarto elemento Tinas-->
+  
+        <table class="table table-dark " style="box-shadow:0px 0px 10px white;">
+          <thead>
+            <tr>
+              <th scope="col" colspan="4" class="title2">TIPOS DE TINAS DE HELADO ( {{totalTinas}} )</th>
+            </tr>
+            <tr class="title3">
+              <th scope="col">#</th>
+              <th scope="col">TIPO DE TINA (L)</th>
+              <th scope="col">THUMBNAIL</th>
+            </tr>
+      
+          </thead>
+          <tbody *ngFor="let fila of Tinas;let impar = odd; let par = even;">
+      
+            <tr>
+              <th [ngClass]="{elementoPar:par,elementoImpar:impar,prueba:par}"> {{fila.id}} </th>
+              <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> {{fila.capacidad}} </td>
+              <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> <a href="../../assets/IMG/tinas/{{fila.id}}.jpg"> <img src="../../assets/IMG/tinas/{{fila.id}}.jpg" alt=""> </a></td>
+            </tr>
+      
+          </tbody>
+        </table>
+  
+        <!--Fin del cuarto elemento-->
+  
+  
+        
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  
+  <!--Ava termina el componente Colapse-->
+  
+  
+  <!--
+   
+    <table class="table table-dark " style="box-shadow:0px 0px 10px white;">
+      <thead>
+        <tr>
+          <th scope="col" colspan="4" class="title2">SABORES OFERTADOS ({{totalSabores}})</th>
+        </tr>
+        <tr class="title3">
+          <th scope="col">#</th>
+          <th scope="col">SABORES</th>
+          <th scope="col">VALOR <br> NUTRICIONAL</th>
+          <th scope="col">THUMBNAIL</th>
+        </tr>
+  
+      </thead>
+      <tbody *ngFor="let fila of Sabores;let impar = odd; let par = even;">
+  
+        <tr>
+          <th [ngClass]="{elementoPar:par,elementoImpar:impar,prueba:par}"> {{fila.id}} </th>
+          <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> {{fila.name}} </td>
+          <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> <a href="https://www.google.com/search?q=Valor+Nutricional+{{fila.name}}">Buscar</a> </td>
+          <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> <img src="../../assets/IMG/sabores/{{fila.id}}.jpg" alt=""> </td>
+        </tr>
+  
+      </tbody>
+    </table>
+  -->
+  
+  </div>

@@ -1,0 +1,136 @@
+$color-primario: #3E8AC8;
+$color-secundario: #FF7B6E;
+$color-terciario: #FEF57C;
+
+$tamano-sociales: 40px;
+
+
+@font-face {
+  font-family: PrettyTitle;
+  src: url('../../assets/resources/fonts/learning_curve/redundeadcond.ttf');
+}
+
+.toolbar {
+  
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background: linear-gradient(
+    135deg,
+    $color-primario 10%,
+    white 50%,
+    $color-primario 10%
+  );
+  color: white;
+  font-weight: 600;
+  
+}
+
+.toolbar #Logo {
+  display: flex;
+  align-self: stretch;
+  width: 300px;
+  background-image: url("../../assets/IMG/Tiffany.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+  background-size: 50%;
+}
+
+.sociales {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image: linear-gradient(90deg, white 10%, #ccc 10%);
+  box-shadow: 0px 0px 10px white;
+  height: 100%;
+  justify-content: space-around;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  border-radius: 30px 0px 0px 0px;
+  border-left: 2px solid $color-primario;
+  width: 150px;
+}
+
+
+.toolbar #twitter-logo {
+  height: $tamano-sociales;
+  margin: 0 8px;
+}
+
+.toolbar #youtube-logo {
+  height: $tamano-sociales;
+  margin: 0 16px;
+}
+
+.toolbar #facebook-logo {
+  height: $tamano-sociales;
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo:hover,
+.toolbar #youtube-logo:hover,
+.toolbar #facebook-logo:hover {
+  border-collapse: collapse;
+  opacity: 50%;
+}
+
+
+.spacer {
+  color: white;
+  text-shadow: 0px 0px 0.2px transparent;
+  
+  font-family: PrettyTitle;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100%;
+  text-align: right;
+  background-image: url('../../assets/IMG/BIGHelado.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  padding-right: 10px;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .spacer {
+    visibility: collapse;
+  }
+
+  .toolbar{
+    display: flex;
+    justify-content: center;
+  }
+
+  .toolbar #Logo {
+    display: flex;
+    width: 70%;
+    background-image: url("../../assets/IMG/Tiffany.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
+    background-size: 50%;
+  }
+
+  .sociales {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+
+    top: 0;
+    background-image: linear-gradient(360deg, white 30%, transparent 30%);
+    border-radius: 0px 0px 30px 30px;
+    width: 100%;
+    box-sizing: border-box;
+    height: fit-content;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    
+  }
+
+}

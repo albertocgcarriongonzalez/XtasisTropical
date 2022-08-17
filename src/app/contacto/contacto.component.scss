@@ -1,0 +1,116 @@
+$color-primario: #3E8AC8;
+$color-secundario: #FF7B6E;
+$color-terciario: #FEF57C;
+
+
+*{
+  box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    background-color: black;
+    border-radius: 15px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    justify-self: center;
+    
+ 
+  }
+
+  .SubContainer{
+    width: 100%;
+    background-color: black;
+    border-radius: 15px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 5px white;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    text-align: justify;
+    margin-top: 10px;
+  }
+
+  .leermas{
+    color: $color-terciario;
+    box-shadow: 0px 0px 15px white;
+    border-radius: 15px;
+    animation-duration: 2s;
+    animation-name: slidein;
+    cursor: pointer;
+    background-image: linear-gradient(360deg,transparent 90%,white 98%);
+ 
+}
+
+@keyframes slidein {
+  from {
+    box-shadow: 0px 0px 100px white;
+    border-radius: 50px;
+    color: cyan;
+  }
+
+  to {
+    box-shadow: 0px 0px 15px white;
+    color: $color-terciario;
+    border-radius: 15px;
+  }
+}
+
+.container-img{
+    background-color: #FF7B6E;
+    height: 10rem;
+    margin: 20px;
+    border-radius: 80%;
+  }
+
+  .SubContainerQR{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .ulSociales{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .ulSociales li{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px white;
+    padding: 10px;
+    margin: 5px;
+  }
+  .ulSociales li:hover{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px $color-primario;
+    background-image: linear-gradient(180deg,transparent 90%, white 90%);
+    cursor: pointer;
+  }
+
+
+
+@media only screen and (max-width: 600px) {
+    .container-img{
+        position: absolute;
+        visibility: hidden;
+      }
+
+  
+  }
+  
+  

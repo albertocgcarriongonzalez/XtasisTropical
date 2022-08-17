@@ -1,0 +1,81 @@
+$color-primario: #3e8ac8;
+$color-secundario: #ff7b6e;
+$color-terciario: #fef57c;
+* {
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  
+}
+.footer {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background-color: black;
+  box-shadow: -5px -5px 10px white;
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+
+  animation: MyAnim 5s infinite;
+  animation-fill-mode: backwards;
+  animation-timing-function: linear;
+}
+
+.logo {
+  height: 10rem;
+  
+}
+
+.spacer1,
+.spacer2 {
+  width: 100%;
+  margin-top: 0.3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.QR{
+  height: 10rem;
+  width: 10rem;
+  border-radius: 15px;
+
+  animation: MyAnim 5s infinite;
+  animation-fill-mode: backwards;
+  animation-timing-function: linear;
+
+}
+
+@keyframes MyAnim {
+  50% {
+    box-shadow: -5px -5px 50px blue;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /*  
+  .footer {
+      position: fixed;
+      bottom: 0;
+      height: 10%;
+    }
+    .spacer1,.spacer2{
+      visibility: hidden;
+    }
+
+    .logo {
+      height: 100%;
+    }
+    
+    */
+
+
+    .footer {
+      position: fixed;
+      visibility: hidden;
+    }
+ 
+
+}

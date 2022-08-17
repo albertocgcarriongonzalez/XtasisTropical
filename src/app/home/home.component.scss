@@ -1,0 +1,119 @@
+$color-primario: #3E8AC8;
+$color-secundario: #FF7B6E;
+$color-terciario: #FEF57C;
+$border-radius:20px;
+
+
+*{
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.container{
+  width: 100%;
+  background-color: black;
+  border-radius: 15px;
+  color: whitesmoke;
+  display: flex;
+  padding: 1%;
+  
+}
+
+.container-img{
+  background-color: #FF7B6E;
+  height: 120px;
+  margin: 20px;
+  border-radius: 50%;
+  
+}
+
+.card{
+  width: 322px;
+  //height: 682px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: small;
+  border-radius: $border-radius;
+  box-shadow: 5px 10px 5px #000;
+  border: 1px solid cyan;
+  margin: 20px 5px 0px 5px;
+  padding-top: 10px;
+  background-color: $color-primario;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+p{
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.card:hover{
+  background-image: linear-gradient(180deg,$color-secundario 10%,transparent 10%);
+  box-shadow: 0px 0px 20px #FF0;
+  cursor: pointer;
+  color: white;
+}
+
+.card div img{
+    border-radius: $border-radius;
+    width: 100%;
+}
+
+.card div:last-child{
+    box-shadow: 1px 1px 5px $color-terciario;
+    border-radius: 0px 0px $border-radius $border-radius;
+    display: flex;
+    justify-content: center; 
+    background-image: linear-gradient(180deg,white 20%,$color-terciario 20%);   
+}
+
+.leermas{
+    color: $color-terciario;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px $color-terciario;
+    border-radius: $border-radius;
+    
+}
+.MyClassActiveLink{
+  color: cyan;
+}
+
+H3 {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    margin: 10px;
+  }
+
+  H1 {
+    text-align: center;
+  }
+
+
+
+  .card div img{
+    display: flex;
+    width: 100%;
+  }
+
+  .container-img{
+    position: absolute;
+    opacity: 30%;
+  }
+
+}
+
