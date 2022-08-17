@@ -6,7 +6,7 @@
     },
   "scripts": {
     "ng": "ng",
-    "start": "app.component start",
+    "start": "npm start index.html",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
