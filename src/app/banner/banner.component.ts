@@ -11,6 +11,7 @@ export class BannerComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  title='Xtasis Tropical'
+  title='Xtasis Tropical';
+  urlasset:string="https://albertocgcarriongonzalez.github.io/xtasistropical/assets/";
 
 }
