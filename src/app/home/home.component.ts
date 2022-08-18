@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {urlasset} from '../app-routing.module';
 
 
 @Component({
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+
+  urlasset:string = urlasset;
 
   constructor() { }
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {urlasset} from '../app-routing.module';
 
 @Component({
   selector: 'app-banner',
@@ -12,6 +13,6 @@ export class BannerComponent implements OnInit {
   ngOnInit(): void {
   }
   title='Xtasis Tropical';
-  urlasset:string="https://albertocgcarriongonzalez.github.io/xtasistropical/assets";
+  urlasset:string=urlasset;
 
 }

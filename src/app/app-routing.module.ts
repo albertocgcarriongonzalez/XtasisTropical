@@ -18,3 +18,5 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
+
+export const urlasset:string = "https://github.com/albertocgcarriongonzalez/xtasistropical.git";
