@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {urlasset} from '../app-routing.module';
 
 @Component({
   selector: 'app-footer',
@@ -8,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
 
   numeroW:string = "+53 5 5168284";
+  urlasset:string = urlasset;
 
   constructor() {
     

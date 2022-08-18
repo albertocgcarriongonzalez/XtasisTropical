@@ -1,6 +1,7 @@
 import { ISabores, IOfertas, IEnvases, ITinas } from './cliente.modelo';
 import { Component, OnInit } from '@angular/core';
 import { sabores, Ofertas, Envases, Tinas } from './data';
+import {urlasset} from '../app-routing.module';
 
 @Component({
   selector: 'app-prod-serv',
@@ -8,6 +9,8 @@ import { sabores, Ofertas, Envases, Tinas } from './data';
   styleUrls: ['./prod-serv.component.scss'],
 })
 export class ProdServComponent implements OnInit {
+
+  urlasset:string = urlasset;
   
   Sabores: ISabores[] = [];
   Ofertas: IOfertas[] = [];

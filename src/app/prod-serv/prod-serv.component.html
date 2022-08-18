@@ -1,5 +1,5 @@
 <div class="container">
-    <img class="container-img" src="../../assets/img/grafascenso.png" alt="">
+    <img class="container-img" src="{{urlasset}}/img/grafascenso.png" alt="">
     <p>
       Nuestra Heladería se complace en brindarles ofertas para para llevar. Bolas de Helado, Barquillos de Helado y más, con múltiples variedades de sabores y ofertas de embaces que compendren desde 150 ml hasta 10 L.
       <br><br>
@@ -71,7 +71,7 @@
                   <th [ngClass]="{elementoPar:par,elementoImpar:impar,prueba:par}"> {{fila.id}} </th>
                   <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> {{fila.name}} </td>
                   <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> <a href="https://www.google.com/search?q=Valor+Nutricional+{{fila.name}}">Buscar</a> </td>
-                  <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> <a href="../../assets/img/sabores/{{fila.id}}.jpg"> <img src="../../assets/img/sabores/{{fila.id}}.jpg" alt="{{fila.name}}"></a> </td>
+                  <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> <a href="{{urlasset}}/img/sabores/{{fila.id}}.jpg"> <img src="{{urlasset}}/img/sabores/{{fila.id}}.jpg" alt="{{fila.name}}"></a> </td>
                 </tr>
           
               </tbody>
@@ -131,7 +131,7 @@
               <tr>
                 <th [ngClass]="{elementoPar:par,elementoImpar:impar,prueba:par}"> {{fila.id}} </th>
                 <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> {{fila.name}} </td>
-                <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> <a href="../../assets/img/ofertas/{{fila.id}}.jpg"><img src="../../assets/img/ofertas/{{fila.id}}.jpg" alt="{{fila.name}}"></a>  </td>
+                <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> <a href="{{urlasset}}/img/ofertas/{{fila.id}}.jpg"><img src="{{urlasset}}/img/ofertas/{{fila.id}}.jpg" alt="{{fila.name}}"></a>  </td>
               </tr>
         
             </tbody>
@@ -193,7 +193,7 @@
                 <tr>
                   <th [ngClass]="{elementoPar:par,elementoImpar:impar,prueba:par}"> {{fila.id}} </th>
                   <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> {{fila.name}} </td>
-                  <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> <a href="../../assets/img/envases/{{fila.id}}.jpg"> <img src="../../assets/img/envases/{{fila.id}}.jpg" alt="{{fila.name}}"> </a></td>
+                  <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> <a href="{{urlasset}}/img/envases/{{fila.id}}.jpg"> <img src="{{urlasset}}/img/envases/{{fila.id}}.jpg" alt="{{fila.name}}"> </a></td>
                 </tr>
           
               </tbody>
@@ -254,7 +254,7 @@
             <tr>
               <th [ngClass]="{elementoPar:par,elementoImpar:impar,prueba:par}"> {{fila.id}} </th>
               <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> {{fila.capacidad}} </td>
-              <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> <a href="../../assets/img/tinas/{{fila.id}}.jpg"> <img src="../../assets/img/tinas/{{fila.id}}.jpg" alt=""> </a></td>
+              <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> <a href="{{urlasset}}/img/tinas/{{fila.id}}.jpg"> <img src="{{urlasset}}/img/tinas/{{fila.id}}.jpg" alt=""> </a></td>
             </tr>
       
           </tbody>
@@ -270,35 +270,5 @@
   
   </div>
   
-  <!--Ava termina el componente Colapse-->
-  
-  
-  <!--
-   
-    <table class="table table-dark " style="box-shadow:0px 0px 10px white;">
-      <thead>
-        <tr>
-          <th scope="col" colspan="4" class="title2">SABORES OFERTADOS ({{totalSabores}})</th>
-        </tr>
-        <tr class="title3">
-          <th scope="col">#</th>
-          <th scope="col">SABORES</th>
-          <th scope="col">VALOR <br> NUTRICIONAL</th>
-          <th scope="col">THUMBNAIL</th>
-        </tr>
-  
-      </thead>
-      <tbody *ngFor="let fila of Sabores;let impar = odd; let par = even;">
-  
-        <tr>
-          <th [ngClass]="{elementoPar:par,elementoImpar:impar,prueba:par}"> {{fila.id}} </th>
-          <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> {{fila.name}} </td>
-          <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> <a href="https://www.google.com/search?q=Valor+Nutricional+{{fila.name}}">Buscar</a> </td>
-          <td [ngClass]="{elementoPar:par,elementoImpar:impar}"> <img src="../../assets/IMG/sabores/{{fila.id}}.jpg" alt=""> </td>
-        </tr>
-  
-      </tbody>
-    </table>
-  -->
   
   </div>

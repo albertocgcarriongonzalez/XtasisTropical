@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {urlasset} from '../app-routing.module';
 
 @Component({
   selector: 'app-contacto',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactoComponent implements OnInit {
 
+  urlasset:string = urlasset;
 
   constructor() { }
 
