@@ -19,4 +19,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule {}
 
-export const urlasset:string = "https://github.com/albertocgcarriongonzalez/xtasistropical.git";
+export const urlasset:string = "https://albertocgcarriongonzalez.github.io/xtasistropical/assets";
