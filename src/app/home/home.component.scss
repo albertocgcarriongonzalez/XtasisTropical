@@ -1,4 +1,4 @@
-$color-primario: #3E8AC8;
+$color-primario: #7dd067;
 $color-secundario: #FF7B6E;
 $color-terciario: #FEF57C;
 $border-radius:20px;
@@ -45,10 +45,11 @@ $border-radius:20px;
   box-shadow: 5px 10px 5px #000;
   border: 1px solid cyan;
   margin: 20px 5px 0px 5px;
-  padding-top: 10px;
+  //padding-top: 10px;
   background-color: $color-primario;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   //height: 100%;
 }
 
