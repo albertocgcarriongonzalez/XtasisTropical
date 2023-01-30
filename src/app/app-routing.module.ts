@@ -10,8 +10,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'Prod-Serv', component: ProdServComponent },
   { path: 'empresa', component: EmpresaComponent },
-  { path: 'contacto', component: ContactoComponent },
-  { path: 'menu', redirectTo: 'https://albertocgcarriongonzalez.github.io/xtasistropical/assets/docs/Menu.pdf' },
+  { path: 'contacto', component: ContactoComponent }
 ];
 
 @NgModule({
