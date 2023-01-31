@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContactoComponent } from './contacto/contacto.component';
 import { EmpresaComponent } from './empresa/empresa.component';
 import { HomeComponent } from './home/home.component';
+import { MenuComponent } from './menu/menu.component';
 import { ProdServComponent } from './prod-serv/prod-serv.component';
 
 const routes: Routes = [
@@ -11,7 +12,7 @@ const routes: Routes = [
   { path: 'Prod-Serv', component: ProdServComponent },
   { path: 'empresa', component: EmpresaComponent },
   { path: 'contacto', component: ContactoComponent },
-  { path: 'menu', redirectTo: 'https://albertocgcarriongonzalez.github.io/xtasistropical/assets/docs/Menu.pdf'}
+  { path: 'menu', component: MenuComponent}
 ];
 
 @NgModule({
