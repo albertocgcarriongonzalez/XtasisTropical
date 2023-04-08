@@ -8,7 +8,8 @@ import { MenuComponent } from './menu/menu.component';
 import { ProdServComponent } from './prod-serv/prod-serv.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/mantenimiento', pathMatch: 'full' },
+  // { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: MantenimientoComponent },
   //{ path: 'home', component: HomeComponent },
   { path: 'Prod-Serv', component: ProdServComponent },
