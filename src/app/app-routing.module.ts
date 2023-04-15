@@ -9,8 +9,9 @@ import { ProdServComponent } from './prod-serv/prod-serv.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/mantenimiento', pathMatch: 'full' },
-  // { path: '', redirectTo: '/home', pathMatch: 'full' },
+  
   { path: 'home', component: MantenimientoComponent },
+  // { path: '', redirectTo: '/home', pathMatch: 'full' },
   //{ path: 'home', component: HomeComponent },
   { path: 'Prod-Serv', component: ProdServComponent },
   { path: 'empresa', component: EmpresaComponent },
