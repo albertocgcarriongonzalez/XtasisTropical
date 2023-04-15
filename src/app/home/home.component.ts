@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     //window.location.href = "https://albertocgcarriongonzalez.github.io/xtasistropical/mantenimiento";
-    window.location.replace ("https://albertocgcarriongonzalez.github.io/xtasistropical/mantenimiento");
+    //window.location.replace ("https://albertocgcarriongonzalez.github.io/xtasistropical/mantenimiento");
   }
 
 
