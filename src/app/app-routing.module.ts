@@ -7,7 +7,7 @@ import { MantenimientoComponent } from './mantenimiento/mantenimiento.component'
 import { MenuComponent } from './menu/menu.component';
 import { ProdServComponent } from './prod-serv/prod-serv.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   { path: '', redirectTo: '/mantenimiento', pathMatch: 'full' },
   
   { path: 'home', component: MantenimientoComponent },
@@ -27,3 +27,4 @@ const routes: Routes = [
 export class AppRoutingModule {}
 
 export const urlasset:string = "https://albertocgcarriongonzalez.github.io/xtasistropical/assets";
+
